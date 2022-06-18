@@ -1,0 +1,227 @@
+
+body {
+  background-image: image(images/bg-curve-desktop.svg);
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 100px 20px 100px;
+  align-items: flex-start;
+}
+
+ul {
+  display: flex;
+  gap: 5rem;
+  padding-top: 15px;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+}
+
+li a:hover {
+  color: #000;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+li {
+  list-style: none;
+  align-items: center;
+}
+
+
+.bigger {
+  width: 50%;
+  align-self: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #673ab7;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 60%;
+  padding: 10px;
+  margin: 0 10px 5px 0;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+
+/* Description Section  */
+
+.description-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 100px;
+  margin: 100px;
+}
+
+.description-container label {
+  color: red;
+}
+
+
+/* Productive Section  */
+
+.productive-container {
+  display: flex;
+  gap: 1rem;
+  margin: 100px;
+}
+
+.card-container {
+  background-color: #ddd;
+  margin: 50px 0;
+  padding: 30px;
+  border-radius: 3%;
+  width: fit-content;
+}
+
+.avatar-img {
+  width: 10%;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.founder {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.card-container h6 {
+  font-size: 0.7rem;
+  margin: 0;
+  font-weight: bold;
+
+}
+
+/* Access Section  */
+
+.access-container {
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  padding: 100px 100px 50px;
+  background-color: #9c27b0;
+}
+
+.access-today {
+  color: #ddd;
+  font-weight: bold;
+}
+
+.form-today input {
+  width: 80%;
+}
+
+/* Footer Section */
+
+#footer-section {
+  padding: 100px 200px 50px 100px;
+  background-color: purple;
+}
+
+.footer-container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.phone, .email {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.footer-container p {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #ddd;
+}
+
+.features a {
+  text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+  body {
+    text-align: center;
+    width: 100%;
+  }
+
+  .description-container, .access-container, .productive-container {
+    flex-direction: column-reverse;
+  }
+
+  input, button {
+    width: 100%;
+    display: block;
+  }
+
+  label {
+    display: none;
+  }
+
+  .productive-container p {
+    text-align: left;
+  }
+
+  .card-container {
+    margin: 10px auto 0;
+    text-align: left;
+  }
+
+  .access-container, .footer-container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+  }
+
+  .access-container input {
+    width: 100%;
+  }
+
+  #footer-section {
+    text-align: left;
+  }
+
+  .footer-container p {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  .icon-images {
+    align-self: center;
+  }
+
+  .phone, .email {
+    align-items: center;
+  }
+
+}
